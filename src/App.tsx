@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import { Menu, X, Phone, Mail, MapPin, ChevronRight, Wrench, Cog, Flame, Zap, Search, Truck, Settings, HardHat, FileText, Award } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
 import LanguageSelector from './components/LanguageSelector';
@@ -19,14 +20,14 @@ interface NewsItem {
 interface Service {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   bgColor: string;
 }
 
 interface Product {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   bgColor: string;
 }
 
